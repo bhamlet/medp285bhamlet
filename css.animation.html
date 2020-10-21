@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Fire Pit</title>
@@ -9,14 +10,16 @@
   <div id="flame"><img src="img/flame.gif" alt="Flame Princess"></div>
 
 <section>
-<picture>
 	<div id="finn"><img src="https://media.giphy.com/media/rOTGSPxvJJY7m/giphy.gif" alt="Cute Finn"></div>
 
     	<style>
-    	/*hide scroll bar to get rid of jumps*/
-    	head {
-      background-color: lavender; /* For browsers that do not support gradients */
-    }
+      * { box-sizing: border-box; }
+      html { height: 100%; scroll-behavior: smooth; }
+      body {
+        #grad1
+        height: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+      }
 
     		@keyframes topFadeOut {
     			0% {
@@ -166,10 +169,11 @@
       animation-duration: 11s;
       animation-iteration-count: infinite;
     }
-        div {
+        .media {
       width: 100px;
       height: 100px;
       position: relative;
+      right: 5%
       left: 10%;
       bottom: 45%;
       animation-name: FadeOutVertical;
@@ -177,15 +181,8 @@
       animation-duration: 11s;
     }
 
-
-    @keyframes example {
-      0%   {background-color:red; left:0px; top:0px;}
-      25%  {background-color:yellow; left:200px; top:0px;}
-      50%  {background-color:blue; left:200px; top:200px;}
-      75%  {background-color:green; left:0px; top:200px;}
-      100% {background-color:red; left:0px; top:0px;}
-    }
     	</style>
+
     </head>
     <body>
     	<div class="first-text">A flickering flame, on the wall</div>
@@ -196,9 +193,7 @@
 
       <picture>
             <source media="(min-width:6000px)" srcset="img/flame.gif" />
-            <source media="(min-width:300px)" srcset="img/flame.gif" />
-            <div id="Finn"><img src="https://media.giphy.com/media/rOTGSPxvJJY7m/giphy.gif" alt="Cute Finn"></div>
-          <img src="img/flame" alt="Flame Princess" />
+            <source media="Finn" img src="https://media.giphy.com/media/rOTGSPxvJJY7m/giphy.gif" alt="Cute Finn" src=""/>
       </picture>
 
     </body>
